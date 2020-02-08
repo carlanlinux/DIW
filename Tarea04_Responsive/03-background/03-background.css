@@ -18,12 +18,18 @@ br {
 .img2 {
     background-image: url(img/content-is-like-water.jpg);
 }
+
+/* Como estamos tratando con la imagen como un fondo lo que hacemos es modificar las propiedades del fondo de cada
+contenedor y dentro de cada contenedor se le aplicará la clase img1 o img2 dos según corresponda */
+
 .div1 {
-
+    background-size: contain; /* Ajusta el tamaño de la imagen de fondo para asegurarse que se ve completamente */
 }
+
 .div2 {
-
+    background-size: cover; /* Hacemos que el backgroud rellene el espacio disponible aunque deforme la imagen */
 }
-.div3 {
 
+.div3 {
+    background-size: auto; /* Hacemos que el backgroud rellene con la imagen tal como viene */
 }

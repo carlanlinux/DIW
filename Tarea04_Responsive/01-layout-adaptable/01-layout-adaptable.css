@@ -1,62 +1,24 @@
-@media (max-width: 1024px ) {
-
-
-    body {
-        margin: 0 auto;
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-
-
-    }
-
-    article {
-        background-color: blue;
-        padding: 1em;
-        font-size: 2em;
-        flex-basis: 70%;
-    }
-
-    aside {
-        background-color: red;
-        padding: 1em;
-        font-size: 1em;
-        flex-basis: 30%;
-        align-self: flex-start;
-
-    }
+body {
+    margin: 0 auto;
+    font-size: 16px;
+    display: flex; /* Indicamos que será un contenedor Flex */
+    flex-direction: row; /* Dirección del contenedor: horizontal (filas) */
+    max-width: 1024px; /* Anchura máxima del body */
 
 }
 
-@media (min-width: 1025px ) {
-
-    body {
-        margin: 0 auto;
-        font-size: 16px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-    }
-
-    article {
-        background-color: blue;
-        padding: 1em;
-        font-size: 2em;
-        flex-basis: 70%;
-
-    }
-
-    aside {
-        background-color: red;
-        padding: 1em;
-        font-size: 1em;
-        flex-basis: 30%;
-        align-self: flex-start;
-
-    }
-
+article {
+    background-color: blue;
+    padding: 1em;
+    font-size: 2em; /* Duplicamos tamaño fuente vs aside */
+    flex-basis: 70%; /* Tamaño de la celda del contenedor */
 }
 
-	
+aside {
+    background-color: red;
+    padding: 1em;
+    font-size: 1em;
+    flex-basis: 30%; /* Tamaño de la celda del contenedor */
+    align-self: flex-start; /* Alinear al incio de la celda en base al eje vertical  */
+}
 
