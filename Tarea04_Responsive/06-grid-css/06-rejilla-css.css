@@ -27,3 +27,15 @@ div {
     padding: 10px;
     margin: 10px;
 }
+
+@media (max-width: 380px) {
+    body {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+}
