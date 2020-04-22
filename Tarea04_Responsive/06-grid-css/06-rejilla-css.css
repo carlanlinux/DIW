@@ -21,6 +21,7 @@ div {
     border: 10px solid blue;
     padding: 10px;
     margin: 10px;
+
 }
 .text {
     border: 10px solid red;
@@ -28,14 +29,199 @@ div {
     margin: 10px;
 }
 
-@media (max-width: 380px) {
+/* Ajustamos contenido para móviles */
+@media (max-width: 240px) {
     body {
+        width: 100%;
+
+        /* Creamos un contenedor grid con una columna que ocupe el 100% */
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
         grid-column-gap: 10px;
         grid-row-gap: 5px;
 
+    }
+
+    .element{
+        border: 10px solid green;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+
+        /* Creamos un contenedor grid anidado dentro del otro con una columna que ocupe el 100%
+        y dos filas que ocupen la mitad de la posición vertical */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+}
+/* Ajustamos contenido para tablets */
+@media (min-width: 241px) and (max-width:768px ) {
+    body {
+        width: 100%;
+
+        /* Creamos un contenedor grid con una columna que ocupe el 100% */
+        display: grid;
+        grid-template-columns: 100%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+    .row{
+        border: 10px solid black;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+
+        /* Creamos un contenedor grid anidado dentro del otro con dos columnas que ocupen la mitad */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .element{
+        border: 10px solid green;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+
+        /* Creamos un contenedor grid anidado dentro del otro una columna que ocupe el 100% y dos filas que ocupen la mitad */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+}
+
+/* Ajustamos contenido para ordenadores */
+@media (min-width: 769px) and (max-width:1024px ) {
+    body {
+        width: 100%;
+        /* Creamos un contenedor grid con una columna que ocupe el 100% */
+        display: grid;
+        grid-template-columns: 100%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+    .row{
+        border: 10px solid black;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+
+        /* Creamos un contenedor grid anidado dentro del otro con tres columnas se distribuyan proporcionalmente */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .element{
+        border: 10px solid green;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+
+        /* Creamos otro contenedor grid anidado dentro del otro con 1 columna y dos filas se distribuyan proporcionalmente */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+}
+
+/* Ajustamos contenido para pantallas HD */
+@media (min-width: 1025px)  {
+    body {
+        width: 100%;
+
+        /* Creamos un contenedor grid con una columna que ocupe el 100% */
+        display: grid;
+        grid-template-columns: 100%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+    .row{
+        border: 10px solid black;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+
+        /* Creamos un contenedor grid anidado con 6 columnas que se se distribuyan proporcionalmente  */
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .element{
+        border: 10px solid green;
+        padding: 10px;
+        margin: 10px;
+        width: 100%;
+        /* Creamos otro contenedor grid anidado dentro del otro con 1 columna y dos filas se distribuyan proporcionalmente */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 50%;
+
+        /* Añadimos un espacio de separación entre columnas y filas */
+        grid-column-gap: 10px;
+        grid-row-gap: 5px;
+
+    }
+
+    .image {
+        border: 10px solid blue;
+        padding: 10px;
+        margin: 10px;
+
+        /* Ponemos el texto color rojo */
+        color: red;
+
+    }
+    .text {
+        border: 10px solid red;
+        padding: 10px;
+        margin: 10px;
+
+        /* Ponemos el texto color rojo */
+        color: red;
     }
 
 }
