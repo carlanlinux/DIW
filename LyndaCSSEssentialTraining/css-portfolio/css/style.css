@@ -1,0 +1,204 @@
+/*Global Styles
+----------------------------------*/
+/*  */
+
+html {
+    box-sizing: border-box;
+}
+
+/* Con esto hacemos que aplique la herencia del box sizing para todos los demás */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: #343434;
+    /*Es una convención el dejar el margen y el padding de body a 0 para qeu el contenido llene toda la página sin ese
+    borde blanco a los lados*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    /*Se recomienda poner una y media que el tamaño de fuente normal */
+    line-height: 1.5;
+}
+
+img {
+    width: 300px;
+}
+
+a {
+    color: yellow;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1.4;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    /* Pnemos a 0 el margen de los H2 para hacer que haya el mismo espacio tanto en la parte de arriba como de abajo del
+     div únicamente con el padding que hemos ampliado. */
+    font-size: 45px;
+}
+
+.content-wrap {
+    max-width: 800px;
+    width: 85%;
+    /*Ponemos cero arriba y abajo e izquierda y derecha auto, con 0 no hace falta poner unidades */
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+/* Denro de la clase item details y del h3, al elemento p que va justo después de la etiqueta h3 */
+
+.item-details h3 + p {
+    font-style: italic;
+}
+
+/* Denro de la clase item details y del h3, aplica a todos los hermanos de p */
+.item-details h3 ~ p {
+    padding: 0;
+    margin: 5px;
+}
+
+/* Esto aplica sólo a los hijos selected de la clase divider */
+.divider > section {
+    border-bottom: 1px dashed #343434;
+    padding: 25px;
+}
+
+/* Esto aplica sólo al último tipo section de los los hijos section de la clase divider */
+.divider > section:last-of-type {
+    border-bottom: none;
+
+}
+
+/*Profile
+----------------------------------*/
+
+header {
+    background-color: #2F3061;
+    color: #F7FFF7;
+    text-align: center;
+}
+
+/*Projects
+----------------------------------*/
+
+.projects {
+    background: #F7FFF7;
+}
+
+.projects a {
+    color: #2F3061;
+}
+
+.projects .btn {
+    color: #F7FFF7;
+    background-color: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    /* Para que no se monte el botón dentro el espacio del padding, cvamos a cambiar su display */
+    display: inline-block;
+}
+
+.projects .btn:hover {
+    background: rgba(47, 48, 97, 80%);
+}
+
+/* Aquí añadimos el overflow para hacer un clear y que flote dentro del container pero que el resto de containers section
+ guarden la misma forma y estén uno debajo del otro además un border inferior para separar cada sección 25 abajo y 0 a la derecha
+  */
+.project-items {
+    overflow: hidden;
+    border-bottom: 1px dashed #343434;
+    padding: 25px 0;
+}
+
+/* Al poner al flotar no queda bien, hay que hacer un clear para que no se muevan los demás y sigan alineados además
+para que no quede la imagen pegada al texto, le añadimos un margen a la derecha de cada imagen pero está muy cerca de la
+imagen por lo que ponemos un padding para que separar la imagen del borde */
+.project-items img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Para quitar el espacio de encima de los títulos y que quede alineado con la imagen ponemos el margin top a 0 */
+.project-items h3 {
+    margin-top: 0;
+}
+
+/*Education
+----------------------------------*/
+
+.education {
+    background-image: url("../images/joanna-kosinska-unsplash.jpg");
+    background-size: cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+
+.education p {
+    width: 60%;
+}
+
+.work-experience {
+    background: #A1C6D7;
+
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+/*Education
+-- --------------------------------*/
+
+
+/*Contact info
+----------------------------------*/
+footer {
+    background: #343434;
+    color: #F7FFF7;
+    text-align: center;
+}
+
+/*  */
+
+.contact-list {
+    /* Con esto quitamos los puntos de la lista */
+    list-style-type: none;
+    /* Quitamos el padding para que no interfiera en cómo se vería */
+    padding: 0;
+    display: flex;
+    /* De esta forma justificamos los items dentro del contenedor al centro. Pero quedarían apretujados seguidos, para separarlos
+     entre sí habría que añadir un padding a cada elemtno de la lista, así metemos espacios y mantenemos la justificación centrada*/
+    justify-content: center;
+}
+
+.contact-list a {
+    /* Añadr un padding en links es bueno por temas de accesibilidad porque así se da más espacio para clicar */
+
+    padding: 15px;
+    /* Como los link son un bloque que quereos que se alineen, añadimos inline block para aseguriarnos */
+    display: inline-block;
+}
