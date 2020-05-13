@@ -1,0 +1,34 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+     viewBox="0 0 400 300" style="enable-background:new 0 0 400 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#0000FF;}
+	.st2{fill:#FFFFFF;stroke:#FF1D25;stroke-width:5;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#0000FF;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#FF0000;}
+	.st5{font-family:'PTSerif-Caption';}
+	.st6{font-size:12.8781px;}
+</style>
+    <g>
+	<path class="st0" d="M87,262.5c-28.95,0-52.5-23.55-52.5-52.5V82c0-28.95,23.55-52.5,52.5-52.5h228c28.95,0,52.5,23.55,52.5,52.5
+		v128c0,28.95-23.55,52.5-52.5,52.5H87z"/>
+        <path class="st1" d="M315,31c28.12,0,51,22.88,51,51v128c0,28.12-22.88,51-51,51H87c-28.12,0-51-22.88-51-51V82
+		c0-28.12,22.88-51,51-51H315 M315,28H87c-29.82,0-54,24.18-54,54v128c0,29.82,24.18,54,54,54h228c29.82,0,54-24.18,54-54V82
+		C369,52.18,344.82,28,315,28L315,28z"/>
+</g>
+    <line class="st2" x1="101" y1="149.5" x2="301" y2="149.5"/>
+    <path class="st2" d="M106.62,138.66"/>
+    <path class="st3" d="M75.07,883"/>
+    <path class="st3" d="M-111.25,706.62"/>
+    <path class="st3" d="M-354.05,874.42"/>
+    <g>
+	<circle class="st0" cx="146" cy="128" r="9"/>
+        <path d="M146,120c4.41,0,8,3.59,8,8s-3.59,8-8,8s-8-3.59-8-8S141.59,120,146,120 M146,118c-5.52,0-10,4.48-10,10s4.48,10,10,10
+		c5.52,0,10-4.48,10-10S151.52,118,146,118L146,118z"/>
+</g>
+    <text transform="matrix(1.0132 0 0 1 249.2495 171.7266)" class="st4 st5 st6">X</text>
+    <path class="st3" d="M251.76,195c26.82,0,48.55-21.44,48.55-47.9"/>
+    <path class="st3" d="M153.38,101.82c29.06,0,52.62,23.25,52.62,51.94"/>
+    <path class="st3" d="M154.38,101.82c-29.48,0-53.38,22.66-53.38,50.62"/>
+    <path class="st3" d="M254.64,195c-26.86,0-48.64-21.49-48.64-48"/>
+</svg>

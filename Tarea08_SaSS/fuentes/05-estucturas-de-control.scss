@@ -1,0 +1,27 @@
+// rehacer mediante un for
+/* Leí for.. y lo hice con un for each en un primer lugar :( Lo repito abajo correcto
+$tamanos: (
+        item1: 2em,
+        item2: 4em,
+        item3: 6em,
+);
+
+@each $key, $value in $tamanos{
+  .#{$key} {
+    font-size: $value;
+  }
+}
+*/
+
+$lista_items: item1, item2, item3;
+$size: 0em;
+
+@for $item from 1 through length($lista_items) {
+  $size: $size +2;
+  .#{nth($lista_items, $item)} {
+    font-size: $size;
+  }
+}
+
+
+

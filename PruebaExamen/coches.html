@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coches Rio</title>
+    <style>
+
+        #datos_coches {
+            position: absolute;
+            width: 130px;
+
+        }
+
+        #datos_motor {
+            position: relative;
+            left: 14em;
+            width: 12em;
+        }
+
+
+        select {
+            margin-bottom: 15px;
+        }
+
+        .input_coches {
+            width: 170px;
+            margin-bottom: 15px;
+        }
+
+        .motor {
+            width: 60px;
+            margin-bottom: 15px;
+        }
+
+        .motor:last-child {
+            position: relative;
+            right: -90px;
+        }
+
+        .motor_oculto {
+            visibility: hidden;
+        }
+
+        @media screen and (max-width: 575px ) {
+            article {
+                display: block;
+            }
+
+            #datos_coches {
+                display: block;
+                position: relative;
+            }
+
+            #datos_motor {
+                display: block;
+                position: relative;
+                left: 1px;
+            }
+
+        }
+
+    </style>
+</head>
+<script type="text/javascript">
+    window.onload = function () {
+        document.getElementById('ocultar_datos_motor').addEventListener("click", function () {
+            document.getElementById('datos_motor').setAttribute('class', 'motor_oculto');
+        }, false);
+
+        document.getElementById('mostrar_datos_motor').addEventListener("click", function () {
+            document.getElementById('datos_motor').removeAttribute("class");
+
+        }, false);
+    }
+</script>
+<body>
+<header>
+    <h1>Coches Rio</h1>
+</header>
+<nav>
+    <hr>
+    <input id="mostrar_datos_motor" type="button" value="Ver datos del motor">
+    <hr>
+</nav>
+<section>
+    <article>
+        <div id="datos_coches">
+            <form>
+                <fieldset>
+                    <legend> Datos de los coches</legend>
+                    <label for="marca">Marca:</label><br>
+                    <input class="input_coches" id="marca" name="marca" type="text"><br>
+                    <label for="modelo">Modelo:</label><br>
+                    <input class="input_coches" id="modelo" name="modelo" type="text"><br>
+                    <label for="precio">Precio:</label><br>
+                    <input class="input_coches" id="precio" name="precio" type="number"><br>
+                </fieldset>
+            </form>
+        </div>
+        <div class="motor_oculto" id="datos_motor">
+            <form>
+                <fieldset>
+                    <legend>Datos motor</legend>
+                    <label for="tipo">Tipo: </label>
+                    <select id="tipo">
+                        <option value="diesel">Diesel</option>
+                        <option value="gasolina">Gasolina</option>
+                        <option value="hibrido">Híbrido</option>
+                        <option value="electrico">Eléctrico</option>
+                    </select><br>
+                    <label for="potencia">Potencia</label>
+                    <input class="motor" id="potencia" max="200" min="20" step="10" type="number" width="200"><br>
+                    <input class="motor" id='ocultar_datos_motor' type="button" value="Cerrar">
+                </fieldset>
+            </form>
+        </div>
+    </article>
+</section>
+</body>
+</html>

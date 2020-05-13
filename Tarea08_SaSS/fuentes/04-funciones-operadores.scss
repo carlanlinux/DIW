@@ -1,0 +1,22 @@
+/*
+Pese a que dice que tiene que ser más claro y es justo lo que hacen mis funciones, no veo que esté correcto el CSS final
+que hay que conseguir... ya que debería tener otros colores (más claros u oscuros) y no los mismos.
+h1 {
+	background: red;
+	border: 1.1em solid #990000; }
+
+p {
+	background: #ff9999;
+	border: 0.9em solid red; }
+
+*/
+
+h1 {
+  background: red;
+  border: 1.1em solid darken(#990000, 20); // rojo 20% más oscuro
+}
+
+p {
+  background: #ff9999; // rojo 30% más claro
+  border: 0.9em solid lighten(red, 30);
+}

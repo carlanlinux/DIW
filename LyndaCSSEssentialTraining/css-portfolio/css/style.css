@@ -95,7 +95,6 @@ h3 {
 header {
     background-color: #2F3061;
     color: #F7FFF7;
-    text-align: center;
 }
 
 /*Projects
@@ -136,7 +135,7 @@ header {
 para que no quede la imagen pegada al texto, le añadimos un margen a la derecha de cada imagen pero está muy cerca de la
 imagen por lo que ponemos un padding para que separar la imagen del borde */
 .project-items img {
-    float: left;
+    float: none;
     margin-right: 20px;
 }
 
@@ -165,7 +164,7 @@ imagen por lo que ponemos un padding para que separar la imagen del borde */
 }
 
 .job-item {
-    display: grid;
+
     grid-template-columns: 1fr 2fr;
     gap: 20px;
 }
@@ -179,7 +178,6 @@ imagen por lo que ponemos un padding para que separar la imagen del borde */
 footer {
     background: #343434;
     color: #F7FFF7;
-    text-align: center;
 }
 
 /*  */
@@ -189,10 +187,10 @@ footer {
     list-style-type: none;
     /* Quitamos el padding para que no interfiera en cómo se vería */
     padding: 0;
-    display: flex;
+    /* display: flex; */
     /* De esta forma justificamos los items dentro del contenedor al centro. Pero quedarían apretujados seguidos, para separarlos
      entre sí habría que añadir un padding a cada elemtno de la lista, así metemos espacios y mantenemos la justificación centrada*/
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .contact-list a {
@@ -201,4 +199,46 @@ footer {
     padding: 15px;
     /* Como los link son un bloque que quereos que se alineen, añadimos inline block para aseguriarnos */
     display: inline-block;
+}
+
+
+/* Responsive Styles
+----------------------------------*/
+@media screen and (min-width: 750px) {
+    .project-items img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+    }
+
+    footer, header {
+
+        text-align: center;
+    }
+
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    h1 {
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 10px;
+    }
+
+    h1, h2 {
+        line-height: 1;
+    }
+
+    .contact-list a {
+        padding: 5px;
+    }
 }

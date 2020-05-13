@@ -1,0 +1,44 @@
+/* Styles for Advanced Menu */
+.advanced-nav li a {
+    display: flex;
+    justify-content: flex-start;
+    /* Le decimos que cada elemento li enlance del menu ocupe el 100% de su espacio */
+    width: 100%;
+}
+
+.icon {
+    /* Da igual lo que le pase al contenedor, que siempre vamos a querer que el tamaño sea 1.5 ems, más grande de lo normal */
+    flex: 0 0 1.5em;
+    font-size: 1.8em;
+
+}
+
+.button-text {
+    font-size: 1.8em;
+}
+
+.button-text span {
+    /* display block es para qeu aparezca en su propia linea independiente */
+    display: block;
+    font-size: 40%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@media screen and (min-width: 30em) {
+
+    .advanced-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advanced-nav li {
+        /* Tenemos que crear otro contenedor flex aquí porque no está llenando el espacio del container las que tienen
+         link, home y news */
+        display: flex;
+        /* 1 -> grow, queremos que nos llene por completo el espacio, que no se encoja y que ocupe 12ems cada item */
+        flex: 1 0 12em;
+    }
+
+}

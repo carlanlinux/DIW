@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Ejercicio 1</title>
+
+    <style>
+        /* Meto en header los estilos del nombre y la lista */
+        header {
+            font-family: Arial sans-serif;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
+
+        /* Estilo de la lista la lista */
+        li {
+            list-style: decimal;
+            font-weight: bold;
+        }
+
+        /* Alineo el texto al centro */
+        p {
+            text-align: center;
+        }
+
+        /* Creo un contenedor donde va todo y le pongo un borde y padding */
+        .container {
+            border: 1px black solid;
+            padding: 10px;
+        }
+
+        /* Creamos un container tipo flex en columnas con los items centrados */
+        .container-cajas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        /* Estilo de las cajas */
+        .cajas {
+
+            width: 120px;
+            height: 120px;
+            border: 2px blue solid;
+            margin: 5px;
+        }
+
+        /* Estilo del texto que uso de botón. */
+        .container-cajas p:last-child {
+            border: 3px green solid;
+            margin: 10px;
+            background-color: lightgray;
+
+        }
+
+        /* Le incluimos un cursor para que se note que es clickable. */
+        .container-cajas p:last-child:hover {
+            cursor: pointer;
+        }
+
+        /* Clase para eliminar la caja. */
+        .eliminaTodo {
+            display: none;
+        }
+
+        /* Clase para ocultar la clase! Gracias por la explicación en la tutoría, para esta parte estaba montando un
+        cristo con flex */
+        .oculta {
+            visibility: hidden;
+        }
+
+        /* Como antes de la tutoría había empezado con flex en columnas, creé un media para si se hace más pequeño que
+         se pasara a filas */
+
+        @media screen and (min-width: 450px ) {
+            .container-cajas {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+
+    </style>
+
+</head>
+<script type="text/javascript">
+    /* Cuando cargue la ventana ponemos los listeners */
+    window.onload = function () {
+        /* Cada listener por ID lo que hará será seleccionar el elemento y añadirle la clase que le corresponda con
+        su función */
+        document.getElementById("Elimina1").addEventListener("click", function () {
+            document.getElementById("caja1").className += " eliminaTodo";
+        }, false);
+
+        document.getElementById("DejaHueco").addEventListener("click", function () {
+            document.getElementById("caja2").className += " oculta";
+        }, false);
+
+        document.getElementById("Elimina3").addEventListener("click", function () {
+            document.getElementById("caja3").className += " eliminaTodo";
+        }, false)
+
+    }
+</script>
+<body>
+<div class="container">
+    <header>
+        <h3>Nombre: Carlos Miguel de Lucas Ballesteros</h3>
+        <ol>
+            <li>Eliminar Caja 1</li>
+            <li>Eliminar Caja 2 conservando el hueco</li>
+            <li>Visualiza Caja 1 y Caja 2</li>
+        </ol>
+    </header>
+    <div class="container-cajas" id="container-cajas">
+        <div class="cajas" id="caja1">
+            <p>Caja 1</p>
+            <p class="btn" id="Elimina1">Eliminar todo</p>
+        </div>
+        <div class="cajas" id="caja2">
+            <p>Caja 2</p>
+            <p class="btn" id="DejaHueco">Eliminar todo</p>
+
+        </div>
+        <div class="cajas" id="caja3">
+            <p>Caja 3</p>
+            <p class="btn" id="Elimina3">Eliminar todo</p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

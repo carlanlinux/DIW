@@ -1,0 +1,30 @@
+%parent_class {
+  background-color: black;
+  color: white;
+}
+
+%bg_blue {
+  background-color: blue;
+}
+
+.animal {
+  @extend %parent_class;
+}
+
+.leon {
+  background-color: red;
+  @extend %parent_class;
+
+}
+
+.pinguino {
+  @extend %parent_class;
+  @extend %bg_blue;
+}
+
+.tux {
+  color: orange;
+  font-weight: bold;
+  @extend %parent_class;
+  @extend %bg_blue;
+}

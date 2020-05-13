@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="Responsive design testing for the masses" name="description">
+    <title>02-tipografia</title>
+    <style>
+        * {
+            vertical-align: top;
+        }
+
+        body {
+            padding: 20px;
+            font-family: sans-serif;
+            overflow-y: scroll;
+        }
+
+        h2 {
+            margin: 0 0 20px 0;
+        }
+
+        #frames {
+            overflow-x: scroll;
+            width: 100%;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+
+        .frame {
+            margin-right: 20px;
+            float: left;
+        }
+
+        .frame:last-child {
+            margin-right: 0;
+        }
+
+        .frame img {
+            display: none;
+            vertical-align: middle;
+        }
+
+        iframe {
+            border: solid 1px #000;
+        }
+
+        .widthOnly {
+            height: 580px;
+        }
+
+        .widthOnly h2 span {
+            display: none;
+        }
+
+        .widthOnly iframe {
+            height: 500px;
+        }
+
+        br {
+            clear: both
+        }
+    </style>
+</head>
+<body>
+<h1></h1>
+<div id="frames">
+    <div>
+        <div class="frame">
+            <h2>240 x 320 (xs)</h2>
+            <iframe height="320" seamless src="../02-tipografia.html" width="255"></iframe>
+        </div>
+        <div class="frame">
+            <h2>320 x 240 (xs)</h2>
+            <iframe height="240" seamless src="../02-tipografia.html" width="335"></iframe>
+        </div>
+        <br/>
+        <br/>
+        <div class="frame" id="f3">
+            <h2>480 x 640 (xs)</h2>
+            <iframe height="640" seamless src="../02-tipografia.html" width="495"></iframe>
+        </div>
+        <div class="frame" id="f3">
+            <h2>640 x 480 (xs)</h2>
+            <iframe height="480" seamless src="../02-tipografia.html" width="655"></iframe>
+        </div>
+        <br/>
+        <br/>
+        <div class="frame" id="f4">
+            <h2>768 x 1024 (sm)</h2>
+            <iframe height="1024" seamless src="../02-tipografia.html" width="783"></iframe>
+        </div>
+        <br/>
+        <br/>
+        <div class="frame" id="f5">
+            <h2>1024 x 768 (md)</h2>
+            <iframe height="768" seamless src="../02-tipografia.html" width="1039"></iframe>
+        </div>
+        <br/>
+        <br/>
+        <div class="frame" id="f5">
+            <h2>1200 x 1024 (lg)</h2>
+            <iframe height="1024" seamless src="../02-tipografia.html" width="1215"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>
