@@ -1,0 +1,43 @@
+/*
+Error: Invalid CSS after "...ort 'libs/vars'": expected "{", was ";"
+        on line 12 of ie8.scss
+
+7: the dashes are enough
+8:
+9: )
+10: ---
+11:
+12: @import 'libs/vars';
+13: @import 'libs/functions';
+14: @import 'libs/mixins';
+15: @import 'libs/skel';
+16:
+17: /*
+
+Backtrace:
+ie8.scss:12
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:387:in `run'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/usr/local/bin/sass:23:in `load'
+/usr/local/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ort 'libs/vars'\": expected \"{\", was \";\"\A         on line 12 of ie8.scss\A \A 7: the dashes are enough\A 8: \A 9: )\A 10: ---\A 11: \A 12: @import 'libs/vars';\A 13: @import 'libs/functions';\A 14: @import 'libs/mixins';\A 15: @import 'libs/skel';\A 16: \A 17: /*";
+}
