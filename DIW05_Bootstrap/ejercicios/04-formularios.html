@@ -8,7 +8,7 @@
     <title>Formularios</title>
 
     <!-- Bootstrap -->
-    <link href="../../bootstrap-4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 </head>
 
@@ -20,18 +20,18 @@
 
     <h2>Básico</h2>
 
-    <form role="form">
-        <div class="">
-            <label for="exampleInputEmail1">Email address</label>
-            <input class="" id="exampleInputEmail1" placeholder="Enter email" type="email">
+    <form class="form-group" role="form">
+        <div class="form-group">
+            <label class="form-control-label" for="exampleInputEmail1">Email address</label>
+            <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
         </div>
-        <div class="">
-            <label for="exampleInputPassword1">Password</label>
-            <input class="" id="exampleInputPassword1" placeholder="Password" type="password">
+        <div class="form-group">
+            <label class="form-control-label" for="exampleInputPassword1">Password</label>
+            <input class="form-control" id="exampleInputPassword1" placeholder="Password" type="password">
         </div>
-        <div class="">
+        <div class="form-check">
             <label>
-                <input type="checkbox"> Remember me
+                <input class="form-check-input" type="checkbox"> Remember me
             </label>
         </div>
         <button class="btn btn-secondary" type="submit">Sign in</button>
@@ -39,18 +39,18 @@
 
     <h2>form-inline</h2>
 
-    <form class="" role="form">
-        <div class="">
+    <form class="form-inline" role="form">
+        <div class="form-group">
             <label class="sr-only" for="exampleInputEmail3">Email address</label>
-            <input class="" id="exampleInputEmail3" placeholder="Enter email" type="email">
+            <input class="form-control" id="exampleInputEmail3" placeholder="Enter email" type="email">
         </div>
-        <div class="">
+        <div class="form-group">
             <label class="sr-only" for="exampleInputPassword3">Password</label>
-            <input class="" id="exampleInputPassword3" placeholder="Password" type="password">
+            <input class="form-control" id="exampleInputPassword3" placeholder="Password" type="password">
         </div>
-        <div class="form-check">
+        <div class="form-check-inline">
             <label class="form-check-label">
-                <input class="form-check-input" type="checkbox"> Remember me
+                <input class="form-check" type="checkbox"> Remember me
             </label>
         </div>
         <button class="btn btn-secondary" type="submit">Sign in</button>
@@ -59,20 +59,20 @@
     <h2>form-horizontal</h2>
 
     <form role="form">
-        <div class="">
-            <label class="col-sm-2 col-form-label" for="inputEmail3">Email</label>
-            <div class="col-sm-10">
-                <input class="" id="inputEmail3" placeholder="Enter Email" type="email">
+        <div class="form-inline">
+            <label class="col-sm-2 col-form-label justify-content-start" for="inputEmail3">Email</label>
+            <div class="col-sm-9 offset-1">
+                <input class="form-control w-100" id="inputEmail3" placeholder="Enter Email" type="email">
             </div>
         </div>
-        <div class="">
-            <label class="col-sm-2 col-form-label" for="inputPassword3">Password</label>
-            <div class="col-sm-10">
-                <input class="" id="inputPassword3" placeholder="Password" type="password">
+        <div class="form-inline">
+            <label class="col-sm-2 col-form-label justify-content-start" for="inputPassword3">Password</label>
+            <div class="col-sm-9 offset-1">
+                <input class="form-control w-100" id="inputPassword3" placeholder="Password" type="password">
             </div>
         </div>
-        <div class="">
-            <div class="offset-sm-2 col-sm-10">
+        <div class="form-group">
+            <div class=" col-sm-10">
                 <div class="form-check">
                     <label class="form-check-label">
                         <input class="form-check-input" type="checkbox"> Remember me
@@ -80,8 +80,8 @@
                 </div>
             </div>
         </div>
-        <div class="">
-            <div class="offset-sm-2 col-sm-10">
+        <div class="form-group">
+            <div class="col-sm-10">
                 <button class="btn btn-secondary" type="submit">Sign in</button>
             </div>
         </div>
@@ -89,25 +89,25 @@
 
     <h2>checkbox y radiobouttons</h2>
 
-    <div class="">
+    <div class="checkbox form-control-danger">
         <label>
             <input checked type="checkbox" value="check1"> checked
         </label>
     </div>
-    <div class=" disabled">
+    <div class="checkbox">
         <label>
-            <input disabled type="checkbox" value="check2"> disabled
+            <input class="" disabled type="checkbox" value="check2"> disabled
         </label>
     </div>
 
-    <div class="">
+    <div class="radio">
         <label>
-            <input checked id="optionsRadios1" name="optionsRadios" type="radio" value="option1"> checked
+            <input checked class="" id="optionsRadios1" name="optionsRadios" type="radio" value="option1"> checked
         </label>
     </div>
-    <div class=" disabled">
+    <div class="radio">
         <label>
-            <input disabled id="optionsRadios3" name="optionsRadios" type="radio" value="option3"> disabled
+            <input class="" disabled id="optionsRadios3" name="optionsRadios" type="radio" value="option3"> disabled
         </label>
     </div>
 
@@ -152,12 +152,13 @@
         <div class="row">
             <div class="col">
                 <label for="validationServer01">Ok</label>
-                <input class="form-control" id="validationServer01" placeholder="First name" required type="text"
+                <input class="form-control is-valid" id="validationServer01" placeholder="First name" required
+                       type="text"
                        value="Ok">
             </div>
             <div class="col-md-6 mb-3">
                 <label for="validationServer03">Ko</label>
-                <input class="form-control" id="validationServer03" placeholder="Ko" required type="text">
+                <input class="form-control is-invalid" id="validationServer03" placeholder="Ko" required type="text">
                 <div class="invalid-feedback">Introduce un valor</div>
             </div>
         </div>
@@ -165,7 +166,7 @@
 
     <h2>Validaciones 'custom' con .was-validated</h2>
 
-    <form class="">
+    <form class="was-validated">
 
         <label class="custom-control custom-checkbox">
             <input class="custom-control-input" required type="checkbox">
@@ -203,20 +204,22 @@
 
     <form>
 
-        <label class="custom-control">
-            <input class="custom-control-input" required type="checkbox">
+        <label class="custom-control-label">
+            <input class="custom-controlcustom-control-input" required type="checkbox">
             <span class="custom-control-indicator"></span>
             <span class="custom-control-description">Obligatorio</span>
         </label>
 
         <div class="custom-controls-stacked d-block my-3">
-            <label class="custom-controlo">
-                <input class="custom-control-input" id="radioStacked1" name="radio-stacked" required type="radio">
+            <label class="custom-control-label">
+                <input class="custom-controlcustom-control-input" id="radioStacked1" name="radio-stacked" required
+                       type="radio">
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description">Obligatorio uno</span>
             </label>
-            <label class="custom-control">
-                <input class="custom-control-input" id="radioStacked2" name="radio-stacked" required type="radio">
+            <label class="custom-control-label">
+                <input class="custom-control custom-control-input" id="radioStacked2" name="radio-stacked" required
+                       type="radio">
                 <span class="custom-control-indicator"></span>
                 <span class="custom-control-description">u otro</span>
             </label>
@@ -229,27 +232,27 @@
             <option value="3">Three</option>
         </select>
 
-        <label class="">
-            <input class="custom-file-input" id="file" required type="file">
+        <label class="custom-file">
+            <input class="custom-file-input" id="filed" required type="file">
             <span class="custom-file-control"></span>
         </label>
     </form>
 
     <h2>Tamaños</h2>
 
-    <input class="form-control" placeholder=".form-control-lg" type="text">
-    <input class="" placeholder="Default input" type="text">
-    <input class="form-control" placeholder=".form-control-sm" type="text">
+    <input class="form-control form-control-lg" placeholder=".form-control-lg" type="text">
+    <input class="form-control form-control" placeholder="Default input" type="text">
+    <input class="form-control form-control-sm" placeholder=".form-control-sm" type="text">
 
     <br/>
 
-    <select class="form-control">
+    <select class="form-control form-control-lg">
         <option>Large select</option>
     </select>
-    <select class="">
+    <select class="form-control form-control">
         <option>Default select</option>
     </select>
-    <select class="form-control">
+    <select class="form-control form-control-sm">
         <option>Small select</option>
     </select>
 </div>

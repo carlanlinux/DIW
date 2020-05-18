@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="../../../../../Downloads/Ex_Files_Bootstrap_EssT_Upd_2020-2/Exercise%20Files/07_04e/css/bootstrap.min.css"
+          rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Medical Questionnaire</h2>
+
+    <form>
+
+        <fieldset class="form-group">
+            <legend>Owner Info</legend>
+
+            <div class="form-group">
+                <label for="ownername">Owner name</label>
+                <input class="form-control" id="ownername" placeholder="Your Name" type="text">
+            </div><!-- form-group -->
+
+            <div class="form-inline">
+                <label for="owneremail">Email address</label>
+                <input aria-describedby="emailHelp" class="form-control mx-sm-3" id="owneremail"
+                       placeholder="Enter email" type="email">
+                <small class="form-text text-muted" id="emailHelp">We'll never share your email</small>
+            </div><!-- form-group -->
+
+        </fieldset><!-- fieldset -->
+        <fieldset class="form-group">
+
+            <legend>Pet Info</legend>
+
+            <div class="form-group">
+                <label for="petname">Pet name</label>
+                <input class="form-control" id="petname" placeholder="Your Pet's name" type="text">
+            </div><!-- form-group -->
+
+            <div class="form-group">
+                <label for="pettype">Pet type</label>
+                <select class="form-control" id="pettype">
+                    <option>Choose</option>
+                    <option value="cat">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="bird">Other</option>
+                </select>
+            </div><!-- form-group -->
+
+            <div class="form-group">
+                <label for="reasonforvisit">Reason for today's visit</label>
+                <textarea class="form-control" id="reasonforvisit" rows="3"></textarea>
+            </div><!-- form-group -->
+        </fieldset><!-- fieldset -->
+
+        <fieldset class="form-group">
+
+            <legend>Pet Medical Data</legend>
+
+            <div class="form-group">
+                <label class="d-block">Has your pet been spayed or neutered?</label>
+
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input checked class="form-check-input" name="spayneut" type="radio" value="yes"> Yes
+                    </label>
+                </div><!-- form-check -->
+
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label">
+                        <input class="form-check-input" name="spayneut" type="radio" value="no"> No
+                    </label>
+                </div><!-- form-check -->
+
+            </div><!-- form-group -->
+
+            <div class="form-group">
+                <label>Has the pet had any of the following in the past 30 days</label>
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Abdominal pain
+                    </label>
+                </div><!-- form-check -->
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Lack of appetite
+                    </label>
+                </div><!-- form-check -->
+
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox"> Weakness
+                    </label>
+                </div><!-- form-check -->
+            </div><!-- form-group -->
+
+        </fieldset><!-- form-group -->
+
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+
+</div><!-- content container -->
+
+<script src="../../../../../Downloads/Ex_Files_Bootstrap_EssT_Upd_2020-2/Exercise%20Files/07_04e/js/jquery.slim.min.js"></script>
+<script src="../../../../../Downloads/Ex_Files_Bootstrap_EssT_Upd_2020-2/Exercise%20Files/07_04e/js/popper.min.js"></script>
+<script src="../../../../../Downloads/Ex_Files_Bootstrap_EssT_Upd_2020-2/Exercise%20Files/07_04e/js/bootstrap.min.js"></script>
+</body>
+</html>

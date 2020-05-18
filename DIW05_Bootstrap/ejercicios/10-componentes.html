@@ -8,7 +8,7 @@
     <title>Componentes</title>
 
     <!-- Bootstrap -->
-    <link href="../../bootstrap-4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap-4.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         h2 {
@@ -26,7 +26,7 @@
 
     <h2>Button groups</h2>
 
-    <div class="">
+    <div class="btn-group">
         <button class="btn btn-secondary" type="button">Left</button>
         <button class="btn btn-secondary" type="button">Middle</button>
         <button class="btn btn-secondary" type="button">Right</button>
@@ -34,26 +34,34 @@
 
     <h2>Input groups</h2>
 
-    <div class="">
-        <span class="input-group-addon">@</span>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+        </div>
         <input class="form-control" placeholder="Username" type="text">
     </div>
 
     <br/>
     <br/>
 
-    <div class="">
+    <div class="input-group">
         <input class="form-control" type="text">
-        <span class="input-group-addon">.00</span>
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
     </div>
 
     <br/>
     <br/>
 
-    <div class="">
-        <span class="input-group-addon">$</span>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+        </div>
         <input class="form-control" type="text">
-        <span class="input-group-addon">.00</span>
+        <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+        </div>
     </div>
 
     <br/>
@@ -61,20 +69,24 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <div class="">
-                    <span class="input-group-addon">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
               <input type="checkbox">
-            </span>
+                    </div>
+                </div>
                 <input class="form-control" type="text">
             </div>
             <!-- /input-group -->
         </div>
         <!-- /.col-lg-6 -->
         <div class="col-lg-6">
-            <div class="">
-                    <span class="input-group-addon">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
               <input type="radio">
             </span>
+                </div>
                 <input class="form-control" type="text">
             </div>
             <!-- /input-group -->
@@ -88,21 +100,25 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <div class="">
+            <div class="input-group">
+                <div class="input-group-prepend">
                     <span class="input-group-btn">
               <button class="btn btn-secondary" type="button">Go!</button>
             </span>
+                </div>
                 <input class="form-control" type="text">
             </div>
             <!-- /input-group -->
         </div>
         <!-- /.col-lg-6 -->
         <div class="col-lg-6">
-            <div class="">
+            <div class="input-group">
                 <input class="form-control" type="text">
+                <div class="input-group-append">
                 <span class="input-group-btn">
               <button class="btn btn-secondary" type="button">Go!</button>
             </span>
+                </div>
             </div>
             <!-- /input-group -->
         </div>
@@ -115,10 +131,12 @@
 
     <div class="row">
         <div class="col-lg-6">
-            <div class="">
+            <div class="input-group">
+                <div class="input-group-prepend">
                 <div class="input-group-btn">
                     <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button">Action
                     </button>
+                </div>
                     <div class="dropdown-menu" role="menu">
                         <a class="dropdown-item" href="#" role="menuitem">Action</a>
                         <a class="dropdown-item" href="#" role="menuitem">Another action</a>
@@ -134,17 +152,19 @@
         </div>
         <!-- /.col-lg-6 -->
         <div class="col-lg-6">
-            <div class="">
+            <div class="input-group">
                 <input class="form-control" type="text">
-                <div class="input-group-btn">
-                    <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button">Action
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" role="menu">
-                        <a class="dropdown-item" href="#" role="menuitem">Action</a>
-                        <a class="dropdown-item" href="#" role="menuitem">Another action</a>
-                        <a class="dropdown-item" href="#" role="menuitem">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#" role="menuitem">Separated link</a>
+                <div class="input-group-append">
+                    <div class="input-group-btn">
+                        <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" type="button">Action
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                            <a class="dropdown-item" href="#" role="menuitem">Action</a>
+                            <a class="dropdown-item" href="#" role="menuitem">Another action</a>
+                            <a class="dropdown-item" href="#" role="menuitem">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" role="menuitem">Separated link</a>
+                        </div>
                     </div>
                 </div>
                 <!-- /btn-group -->
@@ -157,7 +177,7 @@
 
     <h2>Tabs</h2>
 
-    <ul class="nav" role="tablist">
+    <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
         <li class="nav-item dropdown">
@@ -174,7 +194,7 @@
 
     <h2>Pills</h2>
 
-    <ul class="nav">
+    <ul class="nav nav-pills">
         <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
         <li class="nav-item dropdown">
@@ -192,7 +212,7 @@
     <h2>Navbars</h2>
 
     <nav class="navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand d-sm-inline-block" href="#">Navbar</a>
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class=""
                 data-target="#navbarSupportedContent"
                 data-toggle="collapse" type="button">
@@ -230,7 +250,7 @@
 
     <h2>Breadcrumbs</h2>
 
-    <ol class="">
+    <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Home</a></li>
         <li class="breadcrumb-item"><a href="#">Library</a></li>
         <li class="breadcrumb-item active">Data</li>
@@ -241,7 +261,7 @@
     <h2>Pagination</h2>
 
     <nav aria-label="Page navigation">
-        <ul class="">
+        <ul class="pagination">
             <li class="page-item disabled">
                 <a aria-label="Previous" class="page-link" href="#" tabindex="-1">
                     <span aria-hidden="true">&laquo;</span>
@@ -266,43 +286,43 @@
 
     <h2>Badges</h2>
 
-    <span class=" badge-primary">Primary</span>
-    <span class=" badge-secondary">Secondary</span>
-    <span class=" badge-success">Success</span>
-    <span class=" badge-danger">Danger</span>
-    <span class=" badge-warning">Warning</span>
-    <span class=" badge-info">Info</span>
-    <span class=" badge-light">Light</span>
-    <span class=" badge-dark">Dark</span>
+    <span class=" badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
 
     <br/>
     <br/>
 
     <button class="btn">
-        Notifications <span class=" badge-secondary">4</span>
+        Notifications <span class="badge badge-secondary">4</span>
     </button>
 
     <h2>Pill badges</h2>
 
-    <span class="  badge-primary">Primary</span>
-    <span class="  badge-secondary">Secondary</span>
-    <span class="  badge-success">Success</span>
-    <span class="  badge-danger">Danger</span>
-    <span class="  badge-warning">Warning</span>
-    <span class="  badge-info">Info</span>
-    <span class="  badge-light">Light</span>
-    <span class="  badge-dark">Dark</span>
+    <span class="badge badge-pill  badge-primary">Primary</span>
+    <span class="badge badge-pill  badge-secondary">Secondary</span>
+    <span class="badge badge-pill  badge-success">Success</span>
+    <span class="badge badge-pill  badge-danger">Danger</span>
+    <span class="badge badge-pill  badge-warning">Warning</span>
+    <span class="badge badge-pill  badge-info">Info</span>
+    <span class="badge badge-pill  badge-light">Light</span>
+    <span class="badge badge-pill  badge-dark">Dark</span>
 
     <br/>
     <br/>
 
     <button class="btn">
-        Notifications <span class="  badge-secondary">4</span>
+        Notifications <span class="badge-pill  badge-secondary">4</span>
     </button>
 
     <h2>Jumbotron</h2>
 
-    <div class="">
+    <div class="jumbotron">
         <h1 class="display-3">Hello, world!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
             featured content
@@ -314,19 +334,20 @@
 
     <h2>Alerts</h2>
 
-    <div class=" alert-primary" role="alert">This is a primary alert—check it out!</div>
-    <div class=" alert-secondary" role="alert">This is a secondary alert—check it out!</div>
-    <div class=" alert-success" role="alert">This is a success alert—check it out!</div>
-    <div class=" alert-danger" role="alert">This is a danger alert—check it out!</div>
-    <div class=" alert-warning" role="alert">This is a warning alert—check it out!</div>
-    <div class=" alert-info" role="alert">This is a info alert—check it out!</div>
-    <div class=" alert-light" role="alert">This is a light alert—check it out!</div>
-    <div class=" alert-dark" role="alert">This is a dark alert—check it out!</div>
+    <div class="alert alert-primary" role="alert">This is a primary alert—check it out!</div>
+    <div class="alert alert-secondary" role="alert">This is a secondary alert—check it out!</div>
+    <div class="alert alert-success" role="alert">This is a success alert—check it out!</div>
+    <div class="alert alert-danger" role="alert">This is a danger alert—check it out!</div>
+    <div class="alert alert-warning" role="alert">This is a warning alert—check it out!</div>
+    <div class="alert alert-info" role="alert">This is a info alert—check it out!</div>
+    <div class="alert alert-light" role="alert">This is a light alert—check it out!</div>
+    <div class="alert alert-dark" role="alert">This is a dark alert—check it out!</div>
 
     <h2>Progress Bar</h2>
 
-    <div class="">
-        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class=" " role="progressbar" style="width: 25%;">
+    <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="progress-bar" class=" " role="progressbar"
+             style="width: 25%;">
             25%
         </div>
     </div>
@@ -334,7 +355,7 @@
     <br/>
     <br/>
 
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="15" class="progress-bar" role="progressbar"
              style="width: 15%"></div>
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="30" class="progress-bar bg-success" role="progressbar"
@@ -350,59 +371,59 @@
     <br/>
     <br/>
 
-    <div class="">
-        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" class=" " role="progressbar"
+    <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" class="progress-bar " role="progressbar"
              style="width: 10%"></div>
     </div>
     <br/>
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25" class="  bg-success" role="progressbar"
              style="width: 25%"></div>
     </div>
     <br/>
-    <div class="">
-        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="  bg-info" role="progressbar"
+    <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar bg-info" role="progressbar"
              style="width: 50%"></div>
     </div>
     <br/>
-    <div class="">
-        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="  bg-warning" role="progressbar"
+    <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar bg-warning" role="progressbar"
              style="width: 75%"></div>
     </div>
     <br/>
-    <div class="">
-        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="  bg-danger" role="progressbar"
+    <div class="progress">
+        <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar bg-danger" role="progressbar"
              style="width: 100%"></div>
     </div>
 
     <br/>
     <br/>
 
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="10" class="progress-bar progress-bar-striped"
              role="progressbar"
              style="width: 10%"></div>
     </div>
     <br/>
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="25"
              class="progress-bar progress-bar-striped bg-success" role="progressbar"
              style="width: 25%"></div>
     </div>
     <br/>
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped bg-info"
              role="progressbar"
              style="width: 50%"></div>
     </div>
     <br/>
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="75"
              class="progress-bar progress-bar-striped bg-warning" role="progressbar"
              style="width: 75%"></div>
     </div>
     <br/>
-    <div class="">
+    <div class="progress">
         <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100"
              class="progress-bar progress-bar-striped bg-danger" role="progressbar"
              style="width: 100%"></div>
@@ -410,34 +431,42 @@
 
     <h2>List group</h2>
 
-    <div class="">
-        <a class=" active" href="#">Cras justo odio</a>
-        <a class=" list-group-item-action" href="#">Dapibus ac facilisis in</a>
-        <a class=" list-group-item-action" href="#">Morbi leo risus</a>
-        <a class=" list-group-item-action" href="#">Porta ac consectetur ac</a>
-        <a class=" list-group-item-action" href="#">Vestibulum at eros</a>
+    <div class="list-group">
+        <a class="list-group-item active" href="#">Cras justo odio</a>
+        <a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a>
+        <a class="list-group-item list-group-item-action" href="#">Morbi leo risus</a>
+        <a class="list-group-item list-group-item-action" href="#">Porta ac consectetur ac</a>
+        <a class="list-group-item list-group-item-action" href="#">Vestibulum at eros</a>
     </div>
 
     <br/>
     <br/>
 
     <div class="list-group">
-        <a class=" list-group-item-action" href="#">Dapibus ac facilisis in</a>
-        <a class=" list-group-item-action list-group-item-primary" href="#">This is a primary list group item</a>
-        <a class=" list-group-item-action list-group-item-secondary" href="#">This is a secondary list group item</a>
-        <a class=" list-group-item-action list-group-item-success" href="#">This is a success list group item</a>
-        <a class=" list-group-item-action list-group-item-danger" href="#">This is a danger list group item</a>
-        <a class=" list-group-item-action list-group-item-warning" href="#">This is a warning list group item</a>
-        <a class=" list-group-item-action list-group-item-info" href="#">This is a info list group item</a>
-        <a class=" list-group-item-action list-group-item-light" href="#">This is a light list group item</a>
-        <a class=" list-group-item-action list-group-item-dark" href="#">This is a dark list group item</a>
+        <a class="list-group-item list-group-item-action" href="#">Dapibus ac facilisis in</a>
+        <a class="list-group-item list-group-item-action list-group-item-primary" href="#">This is a primary list group
+            item</a>
+        <a class="list-group-item list-group-item-action list-group-item-secondary" href="#">This is a secondary list
+            group item</a>
+        <a class="list-group-item list-group-item-action list-group-item-success" href="#">This is a success list group
+            item</a>
+        <a class="list-group-item list-group-item-action list-group-item-danger" href="#">This is a danger list group
+            item</a>
+        <a class="list-group-item list-group-item-action list-group-item-warning" href="#">This is a warning list group
+            item</a>
+        <a class="list-group-item list-group-item-action list-group-item-info" href="#">This is a info list group
+            item</a>
+        <a class="list-group-item list-group-item-action list-group-item-light" href="#">This is a light list group
+            item</a>
+        <a class="list-group-item list-group-item-action list-group-item-dark" href="#">This is a dark list group
+            item</a>
     </div>
 
     <br/>
     <br/>
 
     <div class="list-group">
-        <a class=" list-group-item-action flex-column align-items-start active" href="#">
+        <a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">List group item heading</h5>
                 <small>3 days ago</small>
@@ -446,7 +475,7 @@
                 blandit.</p>
             <small>Donec id elit non mi porta.</small>
         </a>
-        <a class=" list-group-item-action flex-column align-items-start" href="#">
+        <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">List group item heading</h5>
                 <small class="text-muted">3 days ago</small>
@@ -455,7 +484,7 @@
                 blandit.</p>
             <small class="text-muted">Donec id elit non mi porta.</small>
         </a>
-        <a class=" list-group-item-action flex-column align-items-start" href="#">
+        <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
             <div class="d-flex w-100 justify-content-between">
                 <h5 class="mb-1">List group item heading</h5>
                 <small class="text-muted">3 days ago</small>
@@ -468,13 +497,13 @@
 
     <h2>Cards</h2>
 
-    <div class="card-outline-primary mb-3">
-        <div class="bg-primary">Card header</div>
-        <div class="">Card body</div>
-        <div class="">Card footer</div>
+    <div class="card card-outline-primary mb-3">
+        <div class="card-header bg-primary">Card header</div>
+        <div class="card-body">Card body</div>
+        <div class="card-footer">Card footer</div>
     </div>
 
-    <div class="card   mb-3" style="max-width: 20rem;">
+    <div class="card bg-primary  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Primary card title</h4>
@@ -482,7 +511,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card    mb-3" style="max-width: 20rem;">
+    <div class="card bg-secondary   mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Secondary card title</h4>
@@ -490,7 +519,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card    mb-3" style="max-width: 20rem;">
+    <div class="card  bg-success  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Success card title</h4>
@@ -498,7 +527,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card    mb-3" style="max-width: 20rem;">
+    <div class="card  bg-danger  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Danger card title</h4>
@@ -506,7 +535,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card    mb-3" style="max-width: 20rem;">
+    <div class="card bg-warning   mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Warning card title</h4>
@@ -514,7 +543,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card    mb-3" style="max-width: 20rem;">
+    <div class="card  bg-info  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Info card title</h4>
@@ -530,7 +559,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card   mb-3" style="max-width: 20rem;">
+    <div class="card bg-dark  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Dark card title</h4>
@@ -539,7 +568,7 @@
         </div>
     </div>
 
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-primary">
             <h4 class="card-title">Primary card title</h4>
@@ -547,7 +576,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-secondary mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-secondary">
             <h4 class="card-title">Secondary card title</h4>
@@ -555,7 +584,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-success  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-success">
             <h4 class="card-title">Success card title</h4>
@@ -563,7 +592,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-danger mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-danger">
             <h4 class="card-title">Danger card title</h4>
@@ -571,7 +600,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-warning mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-warning">
             <h4 class="card-title">Warning card title</h4>
@@ -579,7 +608,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-info mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-info">
             <h4 class="card-title">Info card title</h4>
@@ -587,7 +616,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-light mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body">
             <h4 class="card-title">Light card title</h4>
@@ -595,7 +624,7 @@
                 content.</p>
         </div>
     </div>
-    <div class="card  mb-3" style="max-width: 20rem;">
+    <div class="card border-dark  mb-3" style="max-width: 20rem;">
         <div class="card-header">Header</div>
         <div class="card-body text-dark">
             <h4 class="card-title">Dark card title</h4>
@@ -606,9 +635,9 @@
 
     <h2>Card Group</h2>
 
-    <div class="">
+    <div class="card-group">
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -620,7 +649,7 @@
             </div>
         </div>
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -630,7 +659,7 @@
             </div>
         </div>
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -645,9 +674,9 @@
 
     <h2>Card Decks</h2>
 
-    <div class="">
+    <div class="card-deck">
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -659,7 +688,7 @@
             </div>
         </div>
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -669,7 +698,7 @@
             </div>
         </div>
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
@@ -684,9 +713,9 @@
 
     <h2>Card Colums</h2>
 
-    <div class="">
+    <div class="card-columns">
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title that wraps to a new line</h4>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -695,7 +724,7 @@
             </div>
         </div>
         <div class="card">
-            <img alt="Card image cap" class="card-img-top" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image cap" class="card-img-top" src="img/adolfo-sanz-de-diego.jpg">
             <div class="card-body">
                 <h4 class="card-title">Card title</h4>
                 <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -749,7 +778,7 @@
             </div>
         </div>
         <div class="card">
-            <img alt="Card image" class="card-img" src="../img/adolfo-sanz-de-diego.jpg">
+            <img alt="Card image" class="card-img" src="img/adolfo-sanz-de-diego.jpg">
         </div>
     </div>
 
