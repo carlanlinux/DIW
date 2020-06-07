@@ -13,6 +13,16 @@ $tamanos: (
 }
 */
 
+/* Hacerlo con un For
+@for $i from 1 to 4	{
+
+  .item-#{$i} { font-size: 2em * $i; }
+
+}
+*/
+
+/* Diferencia entre for con to y through */
+
 $lista_items: item1, item2, item3;
 $size: 0em;
 

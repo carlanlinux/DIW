@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .contenedor {
+            border: 5px solid grey;
+            width: 400px;
+            height: 200px;
+            margin-left: 20px;
+            display: block;
+            position: relative;
+        }
+
+        .exgterior {
+            width: 450px;
+            height: 350px;
+            border: 1px solid black;
+            margin: 5px;
+
+        }
+
+        .contenedor div {
+            text-align: center;
+        }
+
+
+        input {
+            width: 40px;
+            height: 40px;
+            margin-left: 40px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        #z {
+            top: 50px;
+            left: 20px;
+            display: block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            alignment: center;
+            border: 5px solid crimson;
+        }
+
+
+        #x {
+            top: 50px;
+            left: 270px;
+            display: block;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            alignment: center;
+            border: 5px solid crimson;
+        }
+
+
+        #caja_a {
+            display: block;
+            position: relative;
+            top: -95px;
+            left: 145px;
+            width: 100px;
+            height: 100px;
+            border: 5px solid green;
+            border-radius: 250px;
+            background-color: yellow;
+        }
+
+        #caja_b {
+            display: block;
+            position: absolute;
+            top: 15px;
+            left: 145px;
+            width: 100px;
+            height: 100px;
+            alignment: center;
+            background-color: orange;
+            border: 5px solid green;
+            z-index: -1;
+
+        }
+
+        #nombre {
+            text-align: center;
+        }
+
+        .center {
+            margin-top: 40px;
+        }
+
+    </style>
+
+    <script type="text/javascript">
+        /* Cuando cargue la ventana ponemos los listeners */
+        window.onload = function () {
+            document.getElementById('mostrar_A').addEventListener("click", function () {
+                document.getElementById('caja_a').setAttribute('style', 'z-index: 1');
+                document.getElementById('caja_b').removeAttribute('style');
+            }, false);
+
+            document.getElementById('mostrar_B').addEventListener("click", function () {
+                document.getElementById('caja_b').setAttribute('style', 'z-index: 1');
+                document.getElementById('caja_a').removeAttribute('style');
+            }, false);
+        }
+    </script>
+</head>
+<body>
+<div class="exgterior">
+    <div class="botones">
+        <input id="mostrar_A" type="button" value="A">
+        <input id="mostrar_B" type="button" value="B">
+    </div>
+    <div class="contenedor">
+        <div id="z">
+            <div class="center">Z</div>
+        </div>
+        <div id="caja_a">
+            <div class="center">A</div>
+        </div>
+        <div id="caja_b">
+            <div class="center">B</div>
+        </div>
+        <div id="x">
+            <div class="center">X</div>
+        </div>
+    </div>
+    <div id="nombre">
+        <h3>Diseño Interfaces Web</h3>
+        <span>Carlos Miguel de Lucas Ballesteros</span>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Bootstrap</title>
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Crear Administrador</h2>
+
+    <form>
+
+        <fieldset class="form-group">
+            <span class="error" id="formerror"><?php if (isset($error)) echo $error?></span
+            <div class="form-group">
+                <label class="form-control-label" for="usuario">Usuario</label>
+                <input class="form-control" id="usuario" name="username" title="Nombre de usuario"
+                       type="text" <?php if (!isset($errorPass)) echo " autofocus " ?>
+                placeholder="Nombre de usuario" <?php if (isset($errorPass)) echo " value={$errorPass}" ?> />
+            </div>
+            <div class="form-group">
+                <label class="form-control-label" for="usuario">Contraseña</label>
+                <input class="form-control" id="password" name="password" placeholder="Contraseña"
+                       type="password"  <?php if (isset($errorPass)) echo " autofocus" ?> />
+            </div>
+            <div class="form-group">
+                <label class="form-control-label" for="usuario">Repetir contraseña</label>
+                <input class="form-control" id="confirmPassword" name="confirmPassword" placeholder="Repetir Contraseña"
+                       type="password"/>
+                <small class="form-text text-muted" id="emailHelp">Las contraseñas han de ser iguales</small>
+            </div>
+
+        </fieldset>
+        <div class="btn-group mb-3">
+            <input class="btn btn-dark" id="enviar" type="submit" value="Crear Usuario">
+            <a class="btn btn-dark" href="adminView.php">Volver</a>
+        </div>
+    </form>
+
+
+</div><!-- content container -->
+
+<script src="js/jquery.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

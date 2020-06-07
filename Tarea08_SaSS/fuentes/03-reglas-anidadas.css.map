@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "mappings": "AACA,OAAQ;EACN,SAAS,EAAE,IAAI;EAEf,UAAG;IACD,KAAK,EAAE,IAAI;EAGb,SAAE;IACA,KAAK,EAAE,GAAG;IAEV,WAAE;MACA,eAAe,EAAE,IAAI;MAErB,kBAAO;QACL,KAAK,EAAE,KAAK",
+  "sources": [
+    "03-reglas-anidadas.scss"
+  ],
+  "names": [],
+  "file": "03-reglas-anidadas.css"
+}

@@ -1,0 +1,30 @@
+%animal {
+  background-color: black;
+  color: white;
+}
+
+%pinguino {
+  background-color: blue;
+}
+
+// hacerlo mediante extends
+.animal {
+  @extend %animal;
+}
+
+.leon {
+  @extend %animal;
+  background-color: red;
+}
+
+.pinguino {
+  @extend %animal;
+  @extend %pinguino;
+}
+
+.tux {
+  @extend %animal;
+  @extend %pinguino;
+  color: orange;
+  font-weight: bold;
+}

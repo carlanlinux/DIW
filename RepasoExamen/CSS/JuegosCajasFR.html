@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio css visibility:hidden y display:none</title>
+    <meta charset="utf-8"/>
+    <meta content="Francesc Ricart" name="author"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            /*            The box-sizing property allows us to include the padding and border in an element's total width and height.
+                        If you set box-sizing: border-box; on an element, padding and border are included in the width and height:  */
+            box-sizing: border-box;
+        }
+
+        .izquierda, .derecha {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #000;
+            margin: 20px 50px;
+            display: inline-block;
+            /*float:left;*/
+        }
+
+        .izquierda {
+            background-color: #ccc;
+        }
+
+        .derecha {
+            background-color: #ffff00;
+        }
+
+        div[class*="caja-"] {
+            width: 60px;
+            height: 60px;
+            border: 1px solid #000;
+            margin: 10px;
+            background-color: #bb00bb;
+            float: left;
+            /*display:inline-block;*/
+
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .izquierda .caja-2 {
+            display: none;
+        }
+
+        .derecha .caja-2 {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<div class="izquierda">
+    <!-- div.caja-$*6 -->
+    <div class="caja-1">1</div>
+    <div class="caja-2">2</div>
+    <div class="caja-3">3</div>
+    <div class="caja-4">4</div>
+    <div class="caja-5">5</div>
+    <div class="caja-6">6</div>
+</div>
+<div class="derecha">
+    <!-- div.caja-$*6 -->
+    <div class="caja-1">1</div>
+    <div class="caja-2">2</div>
+    <div class="caja-3">3</div>
+    <div class="caja-4">4</div>
+    <div class="caja-5">5</div>
+    <div class="caja-6">6</div>
+</div>
+
+</body>
+</html>

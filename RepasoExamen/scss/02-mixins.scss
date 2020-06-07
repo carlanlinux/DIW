@@ -1,0 +1,25 @@
+@mixin bordes-redondeados($color: red, $height: 150px) {
+  @if ($color == red) {
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+  }
+  @if ($height == 150px) {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+  }
+}
+
+h1 {
+  height: 600px;
+  background: red;
+  @include bordes-redondeados(red, 600px);
+
+}
+
+p {
+  height: 150px;
+  background: green;
+  @include bordes-redondeados(green, 150px)
+}

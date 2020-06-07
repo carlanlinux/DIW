@@ -1,0 +1,22 @@
+// hacerlo de forma anidada
+#header {
+  font-size: 30px;
+
+  h1 {
+    color: gray;
+  }
+
+  p {
+    color: red;
+
+    a {
+      text-decoration: none;
+
+      :hover {
+        color: green;
+      }
+    }
+  }
+}
+
+

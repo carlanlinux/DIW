@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="Ejemplos posicionamiento flotante y clear" name="description">
+    <meta content="Francesc Ricart" name="author">
+    <title>Posicionamiento flotante cajas</title>
+    <style>
+        .contenedor {
+            margin: auto;
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+
+        img {
+            float: left;
+        }
+
+        /*Se puede usar left, right o both para quitar el float*/
+        .segundo {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <img alt="spider cerdo" src="spidercerdo.png">
+    <p class="primero">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure quisquam in odio impedit nulla
+        voluptas quaerat est sequi magni ex accusantium, omnis, perferendis, culpa error maiores eveniet ab beatae
+        quod.</p>
+    <p class="segundo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio odit qui officiis earum nihil
+        doloremque, itaque. Totam aut, facilis quaerat reprehenderit provident pariatur iusto officiis exercitationem.
+        Iure quaerat, neque. Iure.</p>
+</div>
+</body>
+</html>
